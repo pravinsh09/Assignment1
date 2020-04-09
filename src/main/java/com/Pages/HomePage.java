@@ -19,9 +19,8 @@ public class HomePage extends Test_Base {
 	}
 	
 	public void click_ProductQuickview() throws InterruptedException{
-		 
-		
-		 WebElement element =driver.findElement(By.xpath("//a[@title='"+productname+"']//parent::div//span[text()='Quick view']"));          
+		 		
+		 WebElement element =driver.findElement(By.xpath("//a[@title='"+productname+"']//parent::div//span[text()='Quick view']"));
          JavascriptExecutor executor = (JavascriptExecutor)driver; executor. executeScript("arguments[0]. click();", element);
          
 		
