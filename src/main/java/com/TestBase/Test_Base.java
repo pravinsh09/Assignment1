@@ -94,12 +94,5 @@ public class Test_Base {
 		driver.navigate().to(CONFIG.getProperty("testSiteName"));
 	}
 	
-	 public static void main(String[] args) throws IOException {
-		 
-		 Test_Base t = new Test_Base();
-		 t.init();
-		 t.temp();
-		 
-	 }
 
 }
