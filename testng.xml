@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testscripts A">
+
+
+<test name="testscript A1">
+    <classes>
+        <class name="com.TestScripts.Testcase_1" ></class>  
+    </classes>
+</test>
+
+</suite>
+
