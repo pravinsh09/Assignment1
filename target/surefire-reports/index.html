@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Testscripts_A">
-              <span class="suite-name border-failed">Testscripts A</span>
+              <span class="suite-name border-passed">Testscripts A</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Testscripts_A" class="hide-methods failed suite-Testscripts_A"> (hide)</a> <!-- hide-methods failed suite-Testscripts_A -->
-                      <a href="#" panel-name="suite-Testscripts_A" class="show-methods failed suite-Testscripts_A"> (show)</a> <!-- show-methods failed suite-Testscripts_A -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Testscripts_A" class="hide-methods passed suite-Testscripts_A"> (hide)</a> <!-- hide-methods passed suite-Testscripts_A -->
+                      <a href="#" panel-name="suite-Testscripts_A" class="show-methods passed suite-Testscripts_A"> (show)</a> <!-- show-methods passed suite-Testscripts_A -->
                     </span>
-                    <div class="method-list-content failed suite-Testscripts_A">
+                    <div class="method-list-content passed suite-Testscripts_A">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Testscripts_A" title="com.TestScripts.Testcase_1" hash-for-method="testcase1">testcase1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Testscripts_A -->
+                    </div> <!-- method-list-content passed suite-Testscripts_A -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Testscripts_A" class="panel Testscripts_A">
-          <div class="suite-Testscripts_A-class-failed">
+          <div class="suite-Testscripts_A-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.TestScripts.Testcase_1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,33 +128,10 @@
                   <a name="testcase1">
                   </a> <!-- testcase1 -->
                   <span class="method-name">testcase1</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@title=&apos;&quot;+ProductName+&quot;&apos;]//parent::div//span[text()=&apos;Quick view&apos;]&quot;}
-  (Session info: chrome=80.0.3987.163)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.6.0&apos;, revision: &apos;6fbf3ec767&apos;, time: &apos;2017-09-27T15:28:36.4Z&apos;
-System info: host: &apos;LAPTOP-POAGQJIB&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}), userDataDir=C:\Users\Pravin\AppData\Local\Temp\scoped_dir22628_1926659264}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:50973}, acceptInsecureCerts=false, browserVersion=80.0.3987.163, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true}]
-Session ID: 68f5bf0b8ba663161e59c4735eedd250
-*** Element info: {Using=xpath, value=//a[@title=&apos;&quot;+ProductName+&quot;&apos;]//parent::div//span[text()=&apos;Quick view&apos;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:458)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:348)
-	at com.Pages.HomePage.click_ProductQuickview(HomePage.java:25)
-	at com.TestScripts.Testcase_1.testcase1(Testcase_1.java:40)
-... Removed 38 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Testscripts_A-class-failed -->
+          </div> <!-- suite-Testscripts_A-class-passed -->
         </div> <!-- panel Testscripts_A -->
         <div panel-name="test-xml-Testscripts_A" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -211,7 +188,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testcase1')
 data.setCell(0, 2, 'com.TestScripts.Testcase_1')
-data.setCell(0, 3, 60584);
+data.setCell(0, 3, 86345);
 window.suiteTableData['Testscripts_A']= { tableData: data, tableDiv: 'times-div-Testscripts_A'}
 return data;
 }
@@ -244,11 +221,13 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestScripts.Testcase_1</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testcase1</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">driverquit</span>
+                <span class="method-start">86349 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

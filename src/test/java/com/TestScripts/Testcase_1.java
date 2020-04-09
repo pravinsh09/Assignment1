@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 import com.Pages.AccountPage;
@@ -56,8 +57,7 @@ public class Testcase_1 extends Test_Base {
 		String SummaryAllTotalProducts_Price= Summarypg.Get_SummaryAllTotalProducts_Price();
 		
 		//Comparison price with cart and summary
-		/*Assert.assertEquals(CartTotalProducts,SummaryTotalProducts);
-		Assert.assertEquals(CartFinalTotalPrds,SummaryAllTotalProducts_Price);*/
+	
 		util.VerifyValue(CartTotalProducts,SummaryTotalProducts);
 		util.VerifyValue(CartFinalTotalPrds,SummaryAllTotalProducts_Price);
 		Summarypg.click_SummaryProceedcheckout();
@@ -72,15 +72,16 @@ public class Testcase_1 extends Test_Base {
 		// navigate back to order
 		paymentpg.click_BacktoOrder();
 		String HistoryPrice=orderHistpg.Get_ProductPrice();
-		//Assert.assertEquals(SummaryAllTotalProducts_Price, HistoryPrice);
+		
 		util.VerifyValue(SummaryAllTotalProducts_Price,HistoryPrice);
 	}
 
-	/*
-	 * @AfterTest public void driverquit(){
-	 * 
-	 * driver.quit();
-	 * 
-	 * }
-	 */
+	
+	 @AfterTest 
+	 public void driverquit(){
+	 
+	 driver.quit();
+	 
+	 }
+	 
 }

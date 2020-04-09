@@ -6,6 +6,7 @@
       <class name="com.TestScripts.Testcase_1">
         <methods>
           <include name="testcase1"/>
+          <include name="driverquit"/>
         </methods>
       </class> <!-- com.TestScripts.Testcase_1 -->
     </classes>

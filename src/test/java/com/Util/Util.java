@@ -27,7 +27,7 @@ public class Util
 		int randomNumber = 0;
 		Random objGenerator = new Random();
 		for (int iCount = 0; iCount < 1; iCount++) {
-			 randomNumber = objGenerator.nextInt(100);
+			 randomNumber = objGenerator.nextInt(9000);
 			System.out.println("Random No : " + randomNumber);
 			
 
