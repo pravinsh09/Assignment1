@@ -17,7 +17,7 @@ public class AccountPage extends Test_Base {
 
 	public void accountCreate() throws InterruptedException {
 		
-		util.wait_elementClickable("//input[@name='email_create']", driver, 10);
+		util.wait_elementClickable("//input[@name='email_create']", driver, 20);
 		
 		String Email = "testtg" + util.RandomNumbers() + "@test.com";
 		driver.findElement(By.xpath("//input[@name='email_create']")).sendKeys(Email);

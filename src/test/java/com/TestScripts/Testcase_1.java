@@ -34,7 +34,6 @@ public class Testcase_1 extends Test_Base {
 		init();
 		navigatetoTestUrl();
 		accountpg.clickSign_menu();
-		Thread.sleep(3000);
 		accountpg.accountCreate();
 		accountpg.submit_Personalinfo();
 		homepg.click_WomenMenu();

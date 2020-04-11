@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Testscripts A" duration-ms="87132" started-at="2020-04-09T15:34:58Z" finished-at="2020-04-09T15:36:25Z">
+  <suite name="Testscripts A" duration-ms="64664" started-at="2020-04-11T18:26:49Z" finished-at="2020-04-11T18:27:53Z">
     <groups>
     </groups>
-    <test name="testscript A1" duration-ms="87132" started-at="2020-04-09T15:34:58Z" finished-at="2020-04-09T15:36:25Z">
+    <test name="testscript A1" duration-ms="64664" started-at="2020-04-11T18:26:49Z" finished-at="2020-04-11T18:27:53Z">
       <class name="com.TestScripts.Testcase_1">
-        <test-method status="PASS" signature="testcase1()[pri:0, instance:com.TestScripts.Testcase_1@27f674d]" name="testcase1" duration-ms="86345" started-at="2020-04-09T21:04:58Z" finished-at="2020-04-09T21:06:24Z">
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:com.TestScripts.Testcase_1@27f674d]" name="testcase1" duration-ms="63967" started-at="2020-04-11T23:56:49Z" finished-at="2020-04-11T23:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase1 -->
-        <test-method status="PASS" signature="driverquit()[pri:0, instance:com.TestScripts.Testcase_1@27f674d]" name="driverquit" is-config="true" duration-ms="772" started-at="2020-04-09T21:06:24Z" finished-at="2020-04-09T21:06:25Z">
+        <test-method status="PASS" signature="driverquit()[pri:0, instance:com.TestScripts.Testcase_1@27f674d]" name="driverquit" is-config="true" duration-ms="685" started-at="2020-04-11T23:57:53Z" finished-at="2020-04-11T23:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverquit -->
